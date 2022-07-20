@@ -1,0 +1,52 @@
+@import 'utils/vars';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/main-portfolio';
+@import 'components/main-studio/service';
+@import 'components/main-studio/feature';
+@import 'components/main-studio/work';
+@import 'components/main-studio/team';
+@import 'components/main-studio/clients';
+@import 'components/main-studio/modal';
+
+body{
+    color: getColor(primary);
+    background-color: getBackground(primary);
+    font-family: getFonts(primary),sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-inline-start: 0;
+    text-decoration: none;
+}
+.container{
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    @media screen and (min-width:768px){
+        width: 768px;
+    }
+    @media screen and (min-width:1200px){
+        width: 1200px;
+    }
+}
+.none{
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    left: -1px;
+    top: -1px;
+}
+.section{
+    padding: 60px 0px;
+    @media screen and (min-width:1200px){
+        padding: 94px 0px;
+    }
+}

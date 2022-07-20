@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<head lang="ru">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebStudio</title>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+ rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet">
+<link href="css/main.min.css" rel="stylesheet">
+<link href="">
+</head>
+<body>
+    <!--1 квадрат-->
+    <header>
+        <div class="header-container container">
+        <a href="index.html" class="logo" lang="en" ><span class="logo__accent">Web</span>Studio</a>
+        <div class="menu-container" id="menu-container" data-menu>
+        <nav class="header__nav ">
+            <ul class="pages-list" >
+                <li class="pages-list__item"><a href="index.html"  class="pages-list__link">Студия</a></li>
+                <li class="pages-list__item"><a href="portfolio.html" onclick="return false" class="pages-list__link pages-list__link--now">Портфолио</a></li>
+                <li class="pages-list__item"><a href="/" class="pages-list__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+             <a href="tel:+380961111111" class=" contact__link tel"><svg width="10" height="16" class="contact__svg"><use href="./images/icons.svg#smartphone"></use></svg>+38 096 11 11 111</a>
+            <a href="mailto:info@devstudio.com" class=" contact__link mail"><svg width="16" height="12" class="contact__svg"><use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com</a>
+        </div>
+        <ul class="soshel">
+            <li class="soshel__item"><a class="soshel__link">Instagram</a></li>
+            <li class="soshel__item"><a class="soshel__link">Twitter</a></li>
+            <li class="soshel__item"><a class="soshel__link">Facebook</a></li>
+            <li class="soshel__item"><a class="soshel__link">LinkedIn</a></li>
+        </ul>
+    </div>
+    <button 
+    class="header__button"
+    type="button" 
+    data-menu-button  
+    aria-expanded="false"
+    aria-controls="menu-container">
+<span class="header__button--line"></span>
+</button>
+    </div>
+    </header>
+    <main>
+        <section class="section">
+            <h1 class="none">portfolio</h1>
+            <div class="container">
+            <!--button--->
+            <ul class="catalog">
+                <li ><button type="button" class="catalog__button">Все</button></li>
+                <li ><button type="button" class="catalog__button">Веб-сайты</button></li>
+                <li ><button type="button" class="catalog__button">Приложения</button></li>
+                <li ><button type="button" class="catalog__button">Дизайн</button></li>
+                <li ><button type="button" class="catalog__button">Маркетинг</button></li>
+            </ul>
+ <!--imeges-list-->
+            <ul class="catalog-list">
+            <li class="catalog-list__item"><div class="overlay">
+                <img src="images/images-portfolio/ce3ece7da5d4fa1e76837a53a90fe6e4.jpg" alt="product"  height="295px">
+                <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                <div class="catalog-list__box">
+                <h2 class="catalog-list__titele">Технокряк</h2>
+                <p class="catalog-list__text">Веб-сайт</p>
+            </li>
+            <li class="catalog-list__item"><div class="overlay">
+                <img src="images/images-portfolio/2af7c242b4ca1f507cebceb1a12a0d5e.jpg" alt="product"  height="295px">
+                <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                <div class="catalog-list__box"><h2 class="catalog-list__titele">Постер New Orlean vs Golden Star</h2>
+                <p class="catalog-list__text">Дизайн</p></div>
+            </li>
+            <li class="catalog-list__item"><div class="overlay">
+                <img src="images/images-portfolio/1a433c208105e34dc9868a3bff6ab127.jpg" alt="product" height="295px">
+                <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                <div class="catalog-list__box"><h2 class="catalog-list__titele">Ресторан Seafood</h2>
+                <p class="catalog-list__text">Приложение</p></div>
+            </li>
+            <li class="catalog-list__item"><div class="overlay">
+                <img src="images/images-portfolio/ba4be2b1f0cfb199e4af12cdfc7deb53.jpg" alt="product"  height="295px">
+                <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                <div class="catalog-list__box"><h2 class="catalog-list__titele">Проект Prime</h2>
+                <p class="catalog-list__text">Маркетинг</p></div>
+            </li>
+            <li class="catalog-list__item"><div class="overlay">
+                <img src="images/images-portfolio/096c3e96fbdfa1efd6ca17564f4b60ac.jpg" alt="product" height="295px">
+                <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                <div class="catalog-list__box"><h2 class="catalog-list__titele">Проект Boxes</h2>
+                <p class="catalog-list__text">Приложение</p></div>
+            </li>
+            <li class="catalog-list__item"><div class="overlay">
+                <img src="images/images-portfolio/35cc11f87c4be2640549c8b71a221417.jpg" alt="product"  height="295px">
+                <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                <div class="catalog-list__box"><h2 lang="en" class="catalog-list__titele">Inspiration has no Borders</h2>
+                <p class="catalog-list__text">Веб-сайт</p></div>
+            </li>
+            <li class="catalog-list__item"><div class="overlay">
+                <img src="images/images-portfolio/9883873751631631df6d5595b83d684c.jpg" alt="product"  height="295px">
+                <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                <div class="catalog-list__box"><h2 class="catalog-list__titele">Издание Limited Edition</h2>
+                <p class="catalog-list__text">Дизайн</p></div>
+            </li>
+            <li class="catalog-list__item"><div class="overlay">
+                <img src="images/images-portfolio/22b3731453c05728d01567341b63797c.jpg" alt="product"  height="295px">
+                <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                <div class="catalog-list__box"><h2 class="catalog-list__titele">Проект LAB</h2>
+                <p class="catalog-list__text">Маркетинг</p></div>
+            </li>
+            <li class="catalog-list__item"><div class="overlay">
+                <img src="images/images-portfolio/dc8bd39cf3d9ed5df9520ffb8173dc62.jpg" alt="product"  height="295px">
+                <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                <div class="catalog-list__box"><h2 lang="en" class="catalog-list__titele">Growing Business</h2>
+                <p class="catalog-list__text">Приложение</p></div>
+            </li>
+        </ul>
+    </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer-container container">
+            <div class="row">
+        <address>
+            <a href="index.html" class="footer-logo" lang="en"><span class="logo__accent">Web</span>Studio</a>
+            <ul class="footer-list">
+            <li class="footer-list__item"><a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/" 
+            target="_blank"  rel="noopener noreferrer" class="footer-list__address">г. Киев, пр-т Леси Украинки, 26</a> </li>
+            <li class="footer-list__item"><a href="tel:+380961111111"  class="footer-list__link">+38 096 11 11 111</a></li>
+            <li class="footer-list__item"><a href="mailto:info@devstudio.com"  class="footer-list__link">info@devstudio.com</a></li>
+    </ul>
+    </address>
+<div class="massengers">
+    <h3 class="massengers__titele">присоединяйтесь</h3>
+    <ul class="massengers__list">
+        <li class="massengers__item"><a href="/" class="massengers__link"><svg width="22px" height="22px" class="massengers__svg"><use href="./images/icons.svg#Instagram"></use></svg></a></li>
+        <li class="massengers__item"><a href="/" class="massengers__link"><svg width="22px" height="22px" class="massengers__svg"><use href="./images/icons.svg#Twitter"></use></svg></a></li>
+        <li class="massengers__item"><a href="/" class="massengers__link"><svg width="22px" height="22px" class="massengers__svg"><use href="./images/icons.svg#Facebook"></use></svg></a></li>
+        <li class="massengers__item"><a href="/" class="massengers__link"><svg width="22px" height="22px" class="massengers__svg"><use href="./images/icons.svg#Linkedin"></use></svg></a></li>
+    </ul>
+</div>
+        </div>
+<form class="form-footer">
+    <label class="form-footer__label"><span class="form__text">Подпишитесь на рассылку</span>
+        <input type="email" name="email" placeholder="E-mail" class="form-footer__input"></input>
+</label>
+<button type="submit" class="form-footer__button">Подписаться<svg width="22px" height="22px" class="form-footer__svg">
+    <use href="images/icons.svg#icon-send"></use>
+</svg></button>
+</form>
+</div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
+<form class="modal-form">
+    <label  class="modal-form__line">
+        <input type="text" name="name" class="modal-form__input">
+        <span class="modal-form__svg"><svg width="18px" height="18px">
+            <use href="./images/icons.svg#person-black"></use>
+        </svg></span>
+        <span class="modal-form__text">Имя</span>
+    </label>
+    <label  class="modal-form__line">
+        <input type="tel" name="tel" class="modal-form__input">
+        <span class="modal-form__svg"><svg width="18px" height="18px">
+            <use href="./images/icons.svg#phone-black"></use>
+        </svg></span>
+        <span class="modal-form__text">Телефон</span>
+    </label>
+    <label class="modal-form__line">
+        <input type="email" name="email"  class="modal-form__input">
+        <span class="modal-form__svg"><svg width="18px" height="18px">
+            <use href="./images/icons.svg#email-black"></use>
+        </svg></span>
+        <span class="modal-form__text">Почта</span>
+    </label>
+    <label class="textarea">
+        <span class="textarea__text">Комментарий</span>
+        <textarea name="comment" placeholder="Введите текст" class="textarea__area"></textarea>
+    </label>
+    <label class="checkbox">
+    <input type="checkbox" name="accept" class="checkbox__input"/>
+    <span class="checkbox__icon"></span>
+    Соглашаюсь с рассылкой и принимаю&nbsp<span class="checkbox__accent">Условия договора</span>
+    </label>            
+    <button type="submit" class="modal-form__button">Отправить</button>
+</form>
+
+        <button type="button" data-modal-close>
+            <svg width="11px" height="11px">
+            <use href="./images/icons.svg#Vector"></use>
+            </svg>
+        </button>
+    </div>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

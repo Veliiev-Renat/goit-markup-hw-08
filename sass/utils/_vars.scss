@@ -1,0 +1,30 @@
+$colors: (
+  'primary': #212121,
+  'accent': #2196F3,
+  'secondary': #FFF,
+  'third': #757575,
+  'modal': #e9e9e9,
+  'address':rgba(255, 255, 255, 0.6),
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$fonts:(
+'primary':'Roboto',
+'secondary':'Raleway',
+);
+@function getFonts($key) {
+@return map-get($fonts, $key);
+}
+
+$background:(
+'primary':#fff,
+'footer':#2F303A,
+'button':#F5F4FA,
+'accent':#2196F3,
+'footer-link':rgba(255, 255, 255, 0.1),
+);
+@function getBackground($key) {
+@return map-get($background, $key);
+}

@@ -16,9 +16,9 @@ header {
 
 .header-container {
   display: flex;
-  align-items: baseline;
-  justify-content: baseline;
-  vertical-align: baseline;
+  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -125,7 +125,7 @@ header {
     width: 100%;
     height: 100%;
     position: static;
-    align-items: c;
+    align-items: center;
     justify-content: center;
     padding: 0;
   }
@@ -137,6 +137,8 @@ header {
 
 .pages-list {
   display: flex;
+  align-items: baseline;
+  justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 32px;
@@ -156,7 +158,7 @@ header {
   .pages-list__item {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.2;
     letter-spacing: 0.02em;
   }
 }
@@ -180,8 +182,13 @@ header {
     height: 4px;
     background-color: #2196F3;
     border-radius: 2px;
-    bottom: -28px;
+    bottom: -35px;
     left: 0;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .pages-list__link--now::after {
+    bottom: -31px;
   }
 }
 
@@ -766,6 +773,7 @@ address {
   }
 }
 .feature__list {
+  margin: -15px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -791,11 +799,21 @@ address {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 768px) {
+  .feature__name {
+    text-align: center;
+  }
+}
 .feature__text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (max-width: 768px) {
+  .feature__text {
+    margin-bottom: 30px;
+  }
 }
 
 .case {
@@ -866,6 +884,7 @@ address {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: -15px;
 }
 @media screen and (min-width: 768px) {
   .team {
@@ -882,6 +901,12 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team__titele {
+    font-size: 28px;
+    line-height: 1.2px;
+  }
 }
 .team__item {
   background: #FFFFFF;
@@ -976,6 +1001,7 @@ address {
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 .clients__link {
   display: flex;
@@ -1000,6 +1026,14 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__titele {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  }
 }
 .clients__item {
   margin: 15px;
@@ -1241,7 +1275,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;

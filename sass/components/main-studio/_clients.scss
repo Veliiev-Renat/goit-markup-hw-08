@@ -3,6 +3,7 @@
     &__list{
       display: flex;
       flex-wrap: wrap;
+      margin: -15px;
     } 
     &__link{
         display: flex;
@@ -28,6 +29,12 @@ line-height: 1.2;
 text-align: center;
 letter-spacing: 0.03em;
 margin-bottom: 30px;
+@media screen and (min-width:1200px){
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.03em;
+}
     }
     &__item{margin: 15px;
     height: 92px;

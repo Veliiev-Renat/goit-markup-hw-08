@@ -4,6 +4,7 @@
     }
     background-color: #fff;
     &__list{
+        margin: -15px;
         display: flex;
         flex-wrap: wrap ;
     }
@@ -25,12 +26,18 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom:10px ;
+    @media screen and (max-width:768px){
+        text-align: center;
+    }
 }
 &__text{
 font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
 color: #757575;
+@media screen and (max-width:768px){
+   margin-bottom: 30px;
+}
 }
 }
 .case{
